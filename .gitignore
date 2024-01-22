@@ -1,0 +1,85 @@
+#----------------------------------- 	[ About ]	 -----------------------------------#
+#																						#
+# [Project]																				#
+# 	Project Name : springboot-datasource-api-archetype									#
+# 	Project Git URI : https://github.com/fconsigny/springboot-datasource-api-archetype	#
+# 	Project URI :																		#
+#	Created at 02/03/2023																#
+#																						#
+# [Author]																				#
+# 	Created by Francois CONSIGNY														#
+#	Author Github @https://github.com/fconsigny											#
+#																						#
+# [Annexes]  																			#
+# 	Created with Gitignore.io  @https://www.toptal.com/developers/gitignore/			#
+#																						#
+#---------------------------------------------------------------------------------------#
+
+#----------------------------------- 	[ Tools ]	 -----------------------------------#
+#																						#
+#	Excluding :																			#
+#		Line 29	 - Git 																	#
+#		Line 41  - Java																	#
+#		Line 47  - Maven																#
+#		Line 58  - IntellijIDEA (JetBrain)												#
+#		Line 63  - VisualStudioCode														#
+#		Line 73  - Eclipse																#
+#---------------------------------------------------------------------------------------#
+
+### Git ###
+*.BACKUP.*
+*.BASE.*
+*.LOCAL.*
+*.REMOTE.*
+*_BACKUP_*.txt
+*_BASE_*.txt
+*_LOCAL_*.txt
+*_REMOTE_*.txt
+
+### [ End of Git ] ###
+
+### Java ###
+*.class
+*.log
+
+### [ End of Java ] ###
+
+### Maven ###
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+### [ End of Maven ] ###
+
+### Intellij ###
+.idea/*
+
+### [ End of Intellij ] ###
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+### [ End of VisualStudioCode ] ###
+
+### Eclipse ###
+.project
+.classpath
+.target
+.tern-project
+.texlipse
+.springBeans
+.recommenders/
+.apt_generated/
+.apt_generated_test/
+
+### [ End of Eclipse] ###
+
