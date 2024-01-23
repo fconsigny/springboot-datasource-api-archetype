@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.fconsigny.springboot.datasource.api.archetype</groupId>
+        <artifactId>spring-boot-datasource-api-archetype</artifactId>
+        <version>1.0-SNAPSHOT</version>
+
+    </parent>
+
+    <artifactId>datasource</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <name>datasource</name>
+
+    <dependencyManagement>
+        <!-- ************************** [ Spring Dependencies]  **************************************************** -->
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-jpa</artifactId>
+                <version>${springboot.version}</version>
+            </dependency>
+
+            <!-- ************************** [ Mapper Utility Dependencies]  **************************************** -->
+
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct</artifactId>
+                <version>${mapstruct.version}</version>
+            </dependency>
+
+            <!-- ************************** [ Datasource Dependencies]  ******************************************** -->
+
+            <dependency>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-core</artifactId>
+                <version>${flyway.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.h2database</groupId>
+                <artifactId>h2</artifactId>
+                <version>${h2.version}</version>
+            </dependency>
+
+            <!-- ************************** [ Testing Dependencies]  *********************************************** -->
+
+            <dependency>
+                <groupId>org.mockito</groupId>
+                <artifactId>mockito-core</artifactId>
+                <version>${mockito.version}</version>
+            </dependency>
+
+            <!-- ************************** [ Project Module Dependencies]  **************************************** -->
+
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>domain</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>port-output-datasource</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-api</artifactId>
+                <version>${jupiter.version}</version>
+            </dependency>
+        </dependencies>
+
+    </dependencyManagement>
+
+    <modules>
+        <module>adapter-datasource-flyway-configuration</module>
+    </modules>
+
+</project>

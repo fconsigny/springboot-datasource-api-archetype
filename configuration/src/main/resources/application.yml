@@ -1,0 +1,20 @@
+#---------------------------- Application    --------------------------->
+server:
+  port: 8080
+  servlet:
+    context-path:
+
+#---------------------------- Security  --------------------------->
+app:
+  spring:
+    security:
+      secure:
+        auth:
+          method: x-api-key
+        api:
+          key: 0bce61bd-add5-4712-bb76-75d6ba4d8525
+
+#---------------------------- Swagger  --------------------------->
+springdoc:
+  api-docs:
+    path: /api-docs
