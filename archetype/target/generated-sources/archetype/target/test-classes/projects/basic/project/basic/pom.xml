@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+            
+  
+  
+  
+  <modelVersion>4.0.0</modelVersion>
+            
+  
+  
+  
+  <parent>
+                        
+    
+    
+    
+    <groupId>org.springframework.boot</groupId>
+                        
+    
+    
+    
+    <artifactId>spring-boot-starter-parent</artifactId>
+                        
+    
+    
+    
+    <version>3.2.2</version>
+                    
+  
+  
+  
+  </parent>
+            
+  
+  
+  
+  <groupId>archetype.it</groupId>
+            
+  
+  
+  
+  <artifactId>basic</artifactId>
+            
+  
+  
+  
+  <packaging>pom</packaging>
+            
+  
+  
+  
+  <version>0.1-SNAPSHOT</version>
+            
+  
+  
+  
+  <name>basic</name>
+            
+  
+  
+  
+  <properties>
+                        
+    
+    
+    
+    <!-- ************************** [ Project properties]  ********************************** -->
+                        
+    
+    
+    
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+                        
+    
+    
+    
+    <!-- ************************** [ End of Project properties]  ********************************** -->
+                        
+    
+    
+    
+    <!-- ************************** [ Maven properties]  ********************************** -->
+                        
+    
+    
+    
+    <maven.compiler.version>3.12.1</maven.compiler.version>
+                        
+    
+    
+    
+    <maven.compiler.plugin.source>17</maven.compiler.plugin.source>
+                        
+    
+    
+    
+    <maven.compiler.plugin.target>17</maven.compiler.plugin.target>
+                        
+    
+    
+    
+    <maven.surefire.plugin.version>3.2.5</maven.surefire.plugin.version>
+                        
+    
+    
+    
+    <!-- ************************** [ End of Maven properties]  ********************************** -->
+                        
+    
+    
+    
+    <!-- ************************** [ Spring properties]  ********************************** -->
+                        
+    
+    
+    
+    <springboot.version>3.2.2</springboot.version>
+                        
+    
+    
+    
+    <spring.version>6.1.3</spring.version>
+                        
+    
+    
+    
+    <springframework.context.version>${spring.version}</springframework.context.version>
+                        
+    
+    
+    
+    <springframework.mvc.version>${spring.version}</springframework.mvc.version>
+                        
+    
+    
+    
+    <springframework.aop.version>${spring.version}</springframework.aop.version>
+                        
+    
+    
+    
+    <!-- ************************** [ End of properties]  ********************************** -->
+                        
+    
+    
+    
+    <!-- ************************** [ Data Utility properties]  ********************************** -->
+                        
+    
+    
+    
+    <mapstruct.version>1.5.5.Final</mapstruct.version>
+                        
+    
+    
+    
+    <jackson.version>2.16.1</jackson.version>
+                        
+    
+    
+    
+    <!-- ************************** [ End of Data Utility properties]  ********************************** -->
+                        
+    
+    
+    
+    <!-- ************************** [ DataSource Utility properties]  ********************************** -->
+                        
+    
+    
+    
+    <flyway.version>10.6.0</flyway.version>
+                        
+    
+    
+    
+    <!-- ************************** [ End of DataSource Utility properties]  ********************************** -->
+                        
+    
+    
+    
+    <!-- ************************** [ Postgres properties]  ********************************** -->
+                        
+    
+    
+    
+    <postgres.version>42.7.1</postgres.version>
+                        
+    
+    
+    
+    <!-- ************************** [ End of Postgres properties]  ********************************** -->
+                        
+    
+    
+    
+    <!-- ************************** [ Mysql properties]  ********************************** -->
+                        
+    
+    
+    
+    <!-- <mysql.connector.java.version> </mysql.connector.java.version-->
+                        
+    
+    
+    
+    <!-- ************************** [ End of Mysql properties]  ********************************** -->
+                        
+    
+    
+    
+    <!-- ************************** [ Testing Utility properties]  ********************************** -->
+                        
+    
+    
+    
+    <jupiter.version>5.10.1</jupiter.version>
+                        
+    
+    
+    
+    <mockito.version>5.9.0</mockito.version>
+                        
+    
+    
+    
+    <mockito.inline.version>${mockito.version}</mockito.inline.version>
+                        
+    
+    
+    
+    <!-- ************************** [ End of Testing Utility properties]  ********************************** -->
+                        
+    
+    
+    
+    <springdoc.version>2.2.0</springdoc.version>
+                    
+  
+  
+  
+  </properties>
+        
+  
+  
+  
+  <modules>
+                  
+    
+    
+    
+    <module>application</module>
+                  
+    
+    
+    
+    <module>configuration</module>
+              
+    
+    
+    <module>core</module>
+          
+    
+    <module>datasource</module>
+      
+  </modules>
+      
+
+
+</project>

@@ -1,0 +1,21 @@
+#---------------------------- Datasource    --------------------------->
+spring:
+  datasource:
+    url: jdbc:h2:mem:history-log-db;DB_CLOSE_ON_EXIT=FALSE
+    driverClassName: org.h2.Driver
+    username: zqaQW49vGwdMxVPeLbJnZ2
+    password: dx4nSuQsCGK2HMPhV6TtwF
+  jpa:
+    database-platform:
+      org.hibernate.dialect.H2Dialect
+    generate-ddl: true
+  h2:
+    console:
+      enabled: true
+
+#---------------------------- Flyway    --------------------------->
+flyway:
+  url: jdbc:h2:mem:history-log-db
+  schemas: flyway-history-log-db
+  user: zqaQW49vGwdMxVPeLbJnZ2
+  password: dx4nSuQsCGK2HMPhV6TtwF

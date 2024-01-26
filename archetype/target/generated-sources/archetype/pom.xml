@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.fconsigny.springboot.datasource.api.archetype</groupId>
+  <artifactId>spring-boot-datasource-api-archetype-archetype</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>maven-archetype</packaging>
+
+  <name>spring-boot-datasource-api-archetype-archetype</name>
+
+  <build>
+    <extensions>
+      <extension>
+        <groupId>org.apache.maven.archetype</groupId>
+        <artifactId>archetype-packaging</artifactId>
+        <version>3.2.1</version>
+      </extension>
+    </extensions>
+
+   <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.sonatype.plugins</groupId>
+                    <artifactId>nexus-staging-maven-plugin</artifactId>
+                    <version>1.6.13</version>
+                    <executions>
+                        <execution>
+                            <id>default-deploy</id>
+                            <phase>deploy</phase>
+                            <goals>
+                                <goal>deploy</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                    <configuration>
+                        <serverId>softitrend-nexus</serverId>
+                        <nexusUrl>https://nexus.softitrend.com/</nexusUrl>
+                        <skipStaging>true</skipStaging>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+  </build>
+
+  <developers>
+   <developer>
+      <name>Springboot Rest API Datasource Archetype</name>
+      <email>fconsigny@outlook.com</email>
+      <organization>public</organization>
+      <organizationUrl>https://fconsigny.com</organizationUrl>
+    </developer>
+  </developers>
+
+   <distributionManagement>
+        <snapshotRepository>
+            <id>softitrend-maven-snapshots</id>
+            <url>https://nexus.softitrend.com/repository/maven-snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>softitrend-maven-releases</id>
+            <url>https://nexus.softitrend.com/repository/maven-releases/</url>
+        </repository>
+    </distributionManagement>
+
+
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>https://www.apache.org/licenses/LICENSE-2.0</url>
+    </license>
+  </licenses>
+
+
+  <scm>
+    <url>https://github.com/spring-projects/spring-boot/spring-boot-datasource-api-archetype</url>
+  </scm>
+</project>
